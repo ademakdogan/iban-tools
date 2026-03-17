@@ -22,6 +22,12 @@ from iban_tools.bic_lookup import (
     get_supported_countries,
     iban_to_bic,
 )
+from iban_tools.exceptions import (
+    BicNotFoundError,
+    IbanToolsError,
+    InvalidIbanError,
+    UnsupportedCountryError,
+)
 from iban_tools.extractor import extract_ibans_from_pdf, extract_ibans_from_text
 from iban_tools.formatter import format_iban, is_formatted, sanitize_iban
 from iban_tools.generator import generate_mock_iban, generate_mock_ibans
@@ -47,4 +53,9 @@ __all__ = [
     "get_bic_data_stats",
     # Validation
     "validate_iban",
+    # Exceptions
+    "IbanToolsError",
+    "InvalidIbanError",
+    "UnsupportedCountryError",
+    "BicNotFoundError",
 ]
