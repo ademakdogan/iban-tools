@@ -1,12 +1,6 @@
 # IBAN Tools 🏦
 
-> **⚠️ Coming Soon — This project is under active development.**
-
 A comprehensive Python toolkit for IBAN operations including validation, extraction, generation, formatting, parsing, and BIC lookup.
-
-## Status
-
-🚧 **Development in progress** — Not ready for production use yet.
 
 ## Features (6 Core Functions)
 
@@ -69,8 +63,13 @@ iban_to_bic("DE89370400440532013000")  # 'COBADEFFXXX'
 ## Installation
 
 ```bash
-# From source
-git clone <repository-url>
+pip install iban-tools
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/ademakdogan/iban-tools.git
 cd iban-tools
 uv sync --all-extras
 ```
